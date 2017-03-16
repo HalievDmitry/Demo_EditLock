@@ -24,6 +24,9 @@ class ProcessAdminAction implements ObserverInterface
 
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
+        if (!$this->_session->getUser()) {
+            return;
+        }
         $userId = $this->_session->getUser()->getId();
         if ($observer->getEvent()->getRequest()->getFullActionName() == 'catalog_product_edit') {
 
