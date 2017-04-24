@@ -2,6 +2,6 @@
     "name": "halievdmitry/demo_editlock",
     "description": "Magento 2 module for lock edited products",
     "require": {
-        "php": "^5.3.3 || ^7.0"
+        "php": ">=5.3.3 || >=7.0"
     }
 }
